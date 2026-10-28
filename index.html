@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cap Québec – Étudier au Québec depuis l’Afrique</title>
+<style>
+:root{--bg:#f6f2f0;--fg:#111;--card:#fff;--muted:#555;--red:#e02417;--line:#e3dcd8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17191c;--fg:#f2f2f2;--card:#22252a;--muted:#b5b5b5;--line:#33373d}}
+:root[data-theme="dark"]{--bg:#17191c;--fg:#f2f2f2;--card:#22252a;--muted:#b5b5b5;--line:#33373d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Roboto,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.6}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.3rem}.logo span{color:var(--red)}
+.logo small{display:block;font-weight:400;font-size:.75rem;color:var(--muted)}
+nav a{color:var(--fg);text-decoration:none;margin-right:12px}
+.btn{display:inline-block;background:var(--red);color:#fff!important;font-weight:700;padding:14px 32px;border-radius:999px;text-decoration:none;margin-right:0}
+.hero{position:relative;text-align:center;padding:48px 20px 56px;background:linear-gradient(#9fc3e6,#f2c9a0 55%,#e9d9c4);color:#111;overflow:hidden}
+.hero svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:45%;z-index:0}
+.hero>*{position:relative;z-index:1}
+h1{font-size:2.2rem;margin:0 0 14px;line-height:1.15}
+.hero p{max-width:620px;margin:0 auto 14px;font-size:1.1rem}
+.hero .note{font-weight:700}
+main{max-width:860px;margin:0 auto;padding:36px 20px}
+h2{text-transform:uppercase;font-size:1.5rem;margin:0 0 18px}
+.steps{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-bottom:34px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card b{display:inline-block;background:var(--red);color:#fff;border-radius:50%;width:30px;height:30px;text-align:center;line-height:30px;margin-bottom:8px}
+.card h3{margin:0 0 6px;font-size:1.1rem}.card p{margin:0;color:var(--muted)}
+a{color:var(--red)}
+.cta{text-align:center;margin:30px 0}
+.warn{background:var(--card);border-left:5px solid var(--red);padding:14px 18px;border-radius:8px;color:var(--muted)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px}summary{cursor:pointer;font-weight:700}details ul,details ol{margin:10px 0 0;padding-left:20px;color:var(--muted)}
+.calc{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.calc label{font-size:.9rem;color:var(--muted);display:block}.calc input{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);font-size:1rem}
+#res{margin-top:14px;font-size:1.05rem}#res .tot{font-size:1.5rem;font-weight:800;color:var(--red)}table{width:100%;border-collapse:collapse;margin-bottom:14px}td,th{border-bottom:1px solid var(--line);padding:9px 6px;text-align:left}td:last-child,th:last-child{text-align:right;white-space:nowrap}
+.srch{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font-size:1rem;margin-bottom:10px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.chip{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:7px 14px;font-size:.9rem;cursor:pointer}.chip.on{background:var(--red);color:#fff;border-color:var(--red)}
+.mgrid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}.mc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}.mc b{display:block}.mc span{font-size:.8rem;color:var(--red);font-weight:700}.mc small{display:block;color:var(--muted);margin-top:4px;font-size:.8rem}
+.wg{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.wg input{width:76px;padding:6px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg)}.wr{width:100%;font-size:.82rem;color:var(--fg);margin-top:2px}.wr b{color:var(--red)}
+.ck{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}.ck input{width:20px;height:20px;accent-color:var(--red)}#lvh{margin-top:8px;color:var(--muted)}#prog{font-weight:700;margin:10px 0}.reg{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}.reg div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}.reg small{display:block;color:var(--muted)}
+footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Cap <span>Québec</span><small>Guide indépendant pour étudiants africains</small></div>
+  <nav><a href="#metiers">Métiers</a><a href="#immigration">Immigration</a><a href="#candidater">Candidater</a><a href="#regions">Régions</a><a href="#frais">Frais</a><a class="btn" href="#etapes" style="padding:10px 22px">Mon parcours</a></nav>
+</header>
+
+<section class="hero" id="guide">
+  <h1>Étudier au Québec depuis l’Afrique</h1>
+  <p>Un guide clair, étape par étape, pour préparer ta formation professionnelle ou technique au Québec : programme, admission, documents et budget.</p>
+  <p class="note">Les dates et conditions changent chaque année : vérifie toujours les sites officiels avant de t’inscrire.</p>
+  <a class="btn" href="#etapes">Découvrir</a>
+  <svg viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 L60 35 L120 55 L190 25 L260 50 L330 30 L400 55 L400 100 L0 100Z" fill="#6f8f9c" opacity=".6"/><path d="M0 75 L80 55 L150 72 L230 50 L310 70 L400 58 L400 100 L0 100Z" fill="#2f6b3a"/></svg>
+</section>
+
+<main>
+  <h2 id="etapes">Découvre le parcours</h2>
+  <div class="steps">
+    <div class="card"><b>1</b><h3>Choisir ton programme</h3><p>Explore les formations professionnelles (DEP) et techniques (DEC) selon les métiers qui recrutent.</p></div>
+    <div class="card"><b>2</b><h3>Candidater à l’école</h3><p>Prépare relevés de notes, diplômes et pièces d’identité, puis dépose ton dossier d’admission.</p></div>
+    <div class="card"><b>3</b><h3>Obtenir le CAQ</h3><p>Le Certificat d’acceptation du Québec est demandé auprès du gouvernement du Québec.</p></div>
+    <div class="card"><b>4</b><h3>Permis d’études</h3><p>Demande ensuite le permis d’études auprès du gouvernement du Canada.</p></div>
+    <div class="card"><b>5</b><h3>Prévoir le budget</h3><p>Frais de scolarité, logement, assurance santé, billet d’avion et fonds de démarrage.</p></div>
+    <div class="card"><b>6</b><h3>Préparer l’arrivée</h3><p>Logement, climat, transport et démarches à ton arrivée à Montréal ou en région.</p></div>
+  </div>
+
+  <h2 id="candidater" style="margin-top:34px">Comment faire ta demande</h2>
+  <p class="warn"><b>Important :</b> ce site est un guide d’information. Il ne reçoit aucune candidature, aucun CV ni aucun paiement. Tu envoies ton dossier directement au centre de formation, puis tes demandes officielles aux gouvernements.</p>
+  <details open><summary>Les 6 étapes d’une candidature</summary><ol><li>Choisis le métier et le centre de formation (liste officielle du Québec).</li><li>Vérifie ton niveau d’études et ton français (outil ci-dessous).</li><li>Rassemble tes documents (liste de vérification ci-dessous).</li><li>Envoie ta candidature au centre par le canal qu’il indique (portail ou courriel) et paie les frais d’analyse de dossier.</li><li>Reçois ta lettre d’admission, puis paie le premier versement de scolarité si le centre le demande.</li><li>Fais la demande de CAQ, puis celle du permis d’études.</li></ol></details>
+  <details><summary>Ton CV et tes diplômes</summary><ul><li>CV de 1 à 2 pages : études, expériences, compétences, langues. Au Québec, la photo et l’âge ne sont généralement pas nécessaires.</li><li>Copies claires de tes diplômes et de tous tes relevés de notes.</li><li>Traductions officielles si tes documents ne sont ni en français ni en anglais, si le centre le demande.</li><li>Une évaluation comparative des études faite hors Québec peut être demandée, avec des frais.</li></ul></details>
+
+  <h3 style="margin:22px 0 8px">Vérifie ton niveau d’études</h3>
+  <select id="lv" class="srch"><option value="">Choisis ton niveau</option><option value="a">Primaire ou sans diplôme</option><option value="b">BEPC / fin du collège</option><option value="c">Baccalauréat / Terminale</option><option value="d">Diplôme professionnel ou technique (CAP, BEP, BTS…)</option><option value="e">Licence, master ou plus</option></select>
+  <div id="lvh">Choisis ton niveau pour voir une indication.</div>
+
+  <h3 style="margin:22px 0 8px">Liste de vérification de ton dossier</h3>
+  <div id="cklist"></div>
+  <div id="prog"></div>
+
+  <h2 id="regions" style="margin-top:34px">Les régions du Québec</h2>
+  <p>Le Québec compte 17 régions administratives. Les centres de formation sont répartis dans tout le territoire : regarde plusieurs régions, car l’offre de programmes, le logement et le coût de la vie diffèrent souvent d’une région à l’autre.</p>
+  <div class="reg" id="reglist"></div>
+
+  <h2 id="immigration">Immigration au Canada : le détail</h2>
+  <details open><summary>Avant de commencer : les conditions de base</summary><ul><li>Être admis dans un établissement d’enseignement désigné (EED) du Québec.</li><li>Un permis d’études est nécessaire pour une formation de plus de six mois.</li><li>Au Québec, le CAQ pour études s’obtient avant la demande de permis d’études.</li><li>Prouver que tu peux payer scolarité, vie courante et retour.</li></ul></details>
+  <details><summary>Étape 1 – Le CAQ (gouvernement du Québec)</summary><ol><li>Reçois ta lettre d’admission.</li><li>Remplis la demande de sélection temporaire pour études en ligne.</li><li>Paie les frais (135 $ CAN en 2026) et dépose les documents.</li><li>Attends l’attestation de délivrance dans ton dossier en ligne.</li></ol></details>
+  <details><summary>Étape 2 – Le permis d’études (IRCC, Canada)</summary><ol><li>Dépose ta demande sur le portail d’IRCC avec ton CAQ.</li><li>Paie le permis (150 $ CAN) et la biométrie (85 $ CAN).</li><li>Donne tes empreintes et ta photo dans un centre de collecte.</li><li>Reçois la lettre d’introduction, puis le permis au point d’entrée au Canada.</li></ol></details>
+  <details><summary>Documents à préparer</summary><ul><li>Passeport valide et photos conformes.</li><li>Lettre d’admission et CAQ.</li><li>Preuves de fonds (relevés bancaires, garant, bourse).</li><li>Diplômes et relevés de notes.</li><li>Preuves de paiement des frais.</li></ul></details>
+  <details><summary>Après les études</summary><p style="color:var(--muted)">Certains diplômés peuvent demander un permis de travail postdiplôme. Les conditions changent : vérifie-les sur canada.ca avant de choisir ton programme.</p></details>
+  <details><summary>Attention aux arnaques</summary><p style="color:var(--muted)">Personne ne peut garantir un visa ou une bourse. Paie uniquement sur les sites officiels (quebec.ca, canada.ca) et jamais à un intermédiaire par transfert mobile.</p></details>
+
+  <h2 id="metiers" style="margin-top:34px">Les métiers qui recrutent</h2>
+  <p>Au Québec, la formation professionnelle mène à un DEP (souvent 1 à 2 ans). Ce guide s’adresse aux candidats de tous les pays d’Afrique. Cherche un métier ou filtre par secteur.</p>
+  <p class="warn"><b>Frais communs aux métiers :</b> dossier de candidature d’environ 250 à 300 $ CAN selon le centre, matériel d’environ 250 à 400 $ CAN, puis CAQ + permis + biométrie (370 $ CAN). La scolarité dépend du nombre d’heures du programme : demande le montant exact au centre. Certaines formations DEP de 900 heures ou plus donnent accès à une exemption des droits supplémentaires pour étudiants internationaux : vérifie sur quebec.ca.</p>
+  <h3 style="margin:18px 0 8px">Salaire : règle les paramètres</h3>
+  <p style="color:var(--muted);margin:0 0 10px;font-size:.9rem">Le salaire minimum général au Québec est de 16,60 $ de l’heure depuis le 1er mai 2026. Chaque métier affiche un salaire horaire : la médiane officielle de Guichet-Emplois (données 2025) quand elle est disponible, ou une « estimation non vérifiée » sinon. Un débutant gagne souvent moins que la médiane. Tu peux changer le taux et les heures de chaque métier. Source à consulter : guichetemplois.gc.ca. Pendant les études, le nombre d’heures de travail permis est limité par ton permis : vérifie-le sur canada.ca.</p>
+  <div class="card calc" id="wpanel">
+    <div style="grid-column:1/-1"><label><input id="gm" type="checkbox" checked style="width:auto"> Utiliser le salaire horaire proposé pour chaque métier</label></div><div><label>Taux horaire global ($ CAN/heure)</label><input id="gw" type="number" step="0.05" min="0" value="16.60"></div>
+    <div><label>Heures de travail par semaine</label><input id="gh" type="number" step="1" min="0" value="15"></div>
+    <div><label>Retenues estimées : impôts et cotisations (%)</label><input id="gr" type="number" step="1" min="0" max="60" value="15"></div>
+  </div>
+  <div id="inc" class="card" style="margin:12px 0 16px"></div>
+  <input class="srch" id="q" type="search" placeholder="Rechercher un métier (soudure, cuisine, santé…)">
+  <div class="chips" id="chips"></div>
+  <div class="mgrid" id="mlist"></div>
+  <p id="mcount" style="color:var(--muted);font-size:.85rem"></p>
+  <p style="color:var(--muted);font-size:.85rem">Liste indicative, non exhaustive : la liste officielle des programmes admissibles aux étudiants internationaux est publiée par le gouvernement du Québec et les centres de formation, et change selon les années.</p>
+
+  <h2 id="frais" style="margin-top:34px">Frais d’inscription et de dossier</h2>
+  <table><tr><th>Frais officiels (2026)</th><th>CAN</th></tr><tr><td>CAQ pour études (Québec)</td><td>135 $</td></tr><tr><td>Permis d’études (IRCC)</td><td>150 $</td></tr><tr><td>Biométrie (IRCC)</td><td>85 $</td></tr><tr><td><b>Total dossier</b></td><td><b>370 $</b></td></tr></table>
+  <p class="warn">Preuve de fonds : environ 24 617 $ CAN par an pour une personne seule au Québec (hors scolarité, transport et assurance). Frais de candidature et scolarité : variables selon l’école, demande-les directement à l’établissement. Tous ces montants changent : confirme-les sur les sites officiels.</p>
+
+  <h2 id="paiement" style="margin-top:34px">Moyens de paiement</h2>
+  <p class="warn"><b>Important :</b> ce site ne reçoit aucun paiement. Paie uniquement sur les sites officiels ou directement à ton école.</p>
+  <details open><summary>CAQ (135 $ CAN)</summary><ul><li>Paiement en ligne sur la plateforme Arrima du gouvernement du Québec.</li><li>Cartes de crédit Visa, Mastercard ou American Express.</li><li>La carte peut être à ton nom ou à celui d’un parent ou d’un proche.</li></ul></details>
+  <details open><summary>Permis d’études (150 $) et biométrie (85 $)</summary><ul><li>Paiement en ligne dans ta demande IRCC (gouvernement du Canada).</li><li>Cartes de crédit Visa, Mastercard, American Express, JCB ou UnionPay.</li><li>Les cartes de crédit prépayées sont acceptées : garde-les au moins 18 mois.</li><li>Visa Débit et Débit Mastercard sont acceptées pour les demandes en ligne.</li><li>La carte n’a pas besoin d’être à ton nom.</li></ul></details>
+  <details><summary>Frais de l’école (dossier, matériel, scolarité)</summary><p style="color:var(--muted)">Chaque centre choisit ses modes de paiement (carte, virement bancaire international, etc.). Demande-les par écrit au centre et garde le reçu.</p></details>
+  <details><summary>Conseils depuis l’Afrique</summary><ul><li>Demande à ta banque d’activer les paiements en ligne internationaux sur ta carte.</li><li>Une carte virtuelle ou prépayée Visa ou Mastercard peut dépanner si tu n’as pas de carte de crédit.</li><li>Un parent ou un ami à l’étranger peut payer avec sa carte.</li><li>Ne paie jamais un intermédiaire par transfert d’argent mobile ou pour « garantir » un visa.</li><li>Garde tous tes reçus et captures de paiement.</li></ul></details>
+
+  <h2 style="margin-top:34px">Calculateur de budget</h2>
+  <div class="card calc">
+    <div><label>Frais de candidature à l’école ($ CAN)</label><input id="c1" type="number" min="0" value="0"></div>
+    <div><label>Scolarité annuelle ($ CAN)</label><input id="c2" type="number" min="0" value="0"></div>
+    <div><label>Assurance santé annuelle ($ CAN)</label><input id="c3" type="number" min="0" value="0"></div>
+    <div><label>Billet d’avion ($ CAN)</label><input id="c4" type="number" min="0" value="0"></div>
+    <div><label>Vie par mois : logement, repas, transport ($ CAN)</label><input id="c5" type="number" min="0" value="1500"></div>
+    <div><label>Nombre de mois</label><input id="c6" type="number" min="1" value="12"></div>
+    <div><label>1 $ CAN = ? FCFA (taux d’août 2026 : environ 407)</label><input id="c7" type="number" min="0" value="407"></div>
+  </div>
+  <div id="res" class="card" style="margin-top:14px"></div>
+
+  <h2 style="margin-top:34px">Sources officielles</h2>
+  <p>Consulte directement : <a href="https://www.quebec.ca/immigration" target="_blank" rel="noopener">quebec.ca/immigration</a> et <a href="https://www.canada.ca/fr/immigration-refugies-citoyennete.html" target="_blank" rel="noopener">canada.ca (immigration)</a>.</p>
+
+  <div class="cta"><a class="btn" href="#etapes">Commencer mon plan</a></div>
+
+  <p class="warn"><b>Avertissement :</b> Cap Québec est un site d’information indépendant. Il n’est affilié ni au gouvernement du Québec ni au gouvernement du Canada, et ne gère aucun concours ni aucune inscription.</p>
+</main>
+<footer>© 2026 Cap Québec – Guide indépendant. Informations indicatives : vérifie toujours quebec.ca, canada.ca et guichetemplois.gc.ca.</footer>
+<script>
+(function(){
+  function v(id){var n=parseFloat(document.getElementById(id).value);return isNaN(n)||n<0?0:n;}
+  function f(n){return Math.round(n).toLocaleString("fr-FR");}
+  function calc(){
+    var dossier=370, vie=v("c5")*Math.max(1,v("c6"));
+    var total=dossier+v("c1")+v("c2")+v("c3")+v("c4")+vie;
+    var t=v("c7");
+    var h="<div>Frais officiels de dossier : <b>"+f(dossier)+" $ CAN</b></div>";
+    h+="<div>Vie courante ("+f(Math.max(1,v("c6")))+" mois) : <b>"+f(vie)+" $ CAN</b></div>";
+    h+="<div style=\"margin-top:8px\">Budget total estimé :</div><div class=\"tot\">"+f(total)+" $ CAN</div>";
+    if(t>0){h+="<div>soit environ <b>"+f(total*t)+" FCFA</b></div>";}
+    h+="<div style=\"margin-top:8px;font-size:.85rem;color:var(--muted)\">Estimation indicative. Les fonds exigés par le Québec (environ 24 617 $ CAN) s’ajoutent à la scolarité.</div>";
+    document.getElementById("res").innerHTML=h;
+  }
+  var ids=["c1","c2","c3","c4","c5","c6","c7"];
+  for(var i=0;i<ids.length;i++){document.getElementById(ids[i]).addEventListener("input",calc);}
+  calc();
+})();
+</script>
+<script>
+(function(){
+  var D={"Construction":["Charpenterie-menuiserie","Briquetage-maçonnerie","Carrelage","Peinture en bâtiment","Plâtrage","Ferblanterie-tôlerie","Plomberie et chauffage","Calorifugeage","Arpentage et topographie","Dessin de bâtiment","Pose de revêtements souples","Conduite de grues","Conduite d’engins de chantier"],
+  "Mécanique et transport":["Mécanique automobile","Mécanique de véhicules lourds routiers","Mécanique d’engins de chantier","Mécanique agricole","Carrosserie","Peinture automobile","Conduite de camions","Mécanique de motocyclettes","Mécanique d’aéronefs"],
+  "Métal, électricité, industrie":["Soudage-montage","Usinage sur machines-outils","Électricité","Électromécanique de systèmes automatisés","Mécanique industrielle de construction et d’entretien","Réfrigération","Montage de câbles et de circuits","Fabrication de structures métalliques","Opération d’équipements de production"],
+  "Santé et services":["Assistance à la personne en établissement de santé","Assistance à la personne à domicile","Santé, assistance et soins infirmiers","Assistance dentaire","Hygiène dentaire (technique)","Assistance technique en pharmacie","Intervention en sécurité incendie","Éducation en service de garde"],
+  "Cuisine et alimentation":["Cuisine","Pâtisserie","Boulangerie","Boucherie de détail","Service de la restauration","Cuisine du marché"],
+  "Bureau et informatique":["Comptabilité","Secrétariat","Soutien informatique","Vente-conseil","Représentation","Gestion de commerces","Conception graphique","Infographie"],
+  "Soins personnels":["Coiffure","Esthétique","Épilation","Massothérapie"],
+  "Agriculture et nature":["Production horticole","Fleuristerie","Aménagement de la forêt","Abattage et façonnage des bois","Production acéricole","Grandes cultures","Réalisation d’aménagements paysagers"]};
+  var cur="Tous",chips=document.getElementById("chips"),q=document.getElementById("q");
+  function render(){
+    var s=q.value.toLowerCase(),h="",n=0;
+    for(var k in D){if(cur!=="Tous"&&cur!==k)continue;
+      for(var i=0;i<D[k].length;i++){var m=D[k][i];
+        if(s&&(m+" "+k).toLowerCase().indexOf(s)<0)continue;
+        n++;h+="<div class=\"mc\"><span>"+k+"</span><b>"+m+"</b><small>Dossier ~250–300 $ · Matériel ~250–400 $ · Scolarité : selon les heures, à confirmer au centre</small><div class='wg'><input class='wi' type='number' step='0.05' min='0' placeholder='$/h'><input class='hi' type='number' step='1' min='0' placeholder='h/sem.'><div class='wr'></div></div></div>";}}
+    document.getElementById("mlist").innerHTML=h||"<p>Aucun métier trouvé.</p>";
+    document.getElementById("mcount").textContent=n+" métier(s) affiché(s)";if(window.updW)window.updW();
+  }
+  function drawChips(){
+    var names=["Tous"].concat(Object.keys(D)),h="";
+    for(var i=0;i<names.length;i++){h+="<button type=\"button\" class=\"chip"+(names[i]===cur?" on":"")+"\" data-k=\""+names[i]+"\">"+names[i]+"</button>";}
+    chips.innerHTML=h;
+  }
+  chips.addEventListener("click",function(e){var k=e.target.getAttribute("data-k");if(k){cur=k;drawChips();render();}});
+  q.addEventListener("input",render);
+  drawChips();render();
+})();
+</script>
+<script>
+(function(){
+  function num(id){var e=document.getElementById(id);var n=e?parseFloat(e.value):0;return isNaN(n)||n<0?0:n;}
+  function f(n){return Math.round(n).toLocaleString("fr-FR");}
+  function f2(n){return n.toLocaleString("fr-FR",{minimumFractionDigits:2,maximumFractionDigits:2});}
+  var W={"Charpenterie-menuiserie":[36.84,"G"],"Briquetage-maçonnerie":[40.43,"R"],"Carrelage":[34.76,"N"],"Peinture en bâtiment":[34.98,"G"],"Plâtrage":[35,"E"],"Ferblanterie-tôlerie":[38,"E"],"Plomberie et chauffage":[40,"G"],"Calorifugeage":[43,"G"],"Arpentage et topographie":[28,"E"],"Dessin de bâtiment":[27,"E"],"Pose de revêtements souples":[33,"E"],"Conduite de grues":[40,"E"],"Conduite d’engins de chantier":[33,"E"],
+  "Mécanique automobile":[28,"G"],"Mécanique de véhicules lourds routiers":[28,"G"],"Mécanique d’engins de chantier":[30,"E"],"Mécanique agricole":[24,"E"],"Carrosserie":[25,"G"],"Peinture automobile":[25,"G"],"Conduite de camions":[25.2,"G"],"Mécanique de motocyclettes":[22,"E"],"Mécanique d’aéronefs":[35,"E"],
+  "Soudage-montage":[28,"R"],"Usinage sur machines-outils":[27,"E"],"Électricité":[41.3,"G"],"Électromécanique de systèmes automatisés":[30.75,"G"],"Mécanique industrielle de construction et d’entretien":[29.8,"R"],"Réfrigération":[38,"G"],"Montage de câbles et de circuits":[22,"E"],"Fabrication de structures métalliques":[26,"E"],"Opération d’équipements de production":[23,"E"],
+  "Assistance à la personne en établissement de santé":[25.1,"G"],"Assistance à la personne à domicile":[20,"E"],"Santé, assistance et soins infirmiers":[30,"G"],"Assistance dentaire":[26,"G"],"Hygiène dentaire (technique)":[39,"G"],"Assistance technique en pharmacie":[21,"E"],"Intervention en sécurité incendie":[28,"E"],"Éducation en service de garde":[24,"G"],
+  "Cuisine":[18,"G"],"Pâtisserie":[17.8,"G"],"Boulangerie":[17.8,"G"],"Boucherie de détail":[20,"G"],"Service de la restauration":[17.5,"E"],"Cuisine du marché":[18,"G"],
+  "Comptabilité":[25,"G"],"Secrétariat":[26,"G"],"Soutien informatique":[27,"E"],"Vente-conseil":[19,"E"],"Représentation":[22,"E"],"Gestion de commerces":[24,"E"],"Conception graphique":[25,"E"],"Infographie":[24,"E"],
+  "Coiffure":[21.63,"G"],"Esthétique":[19,"E"],"Épilation":[18,"E"],"Massothérapie":[16.41,"C"],
+  "Production horticole":[20,"E"],"Fleuristerie":[18,"E"],"Aménagement de la forêt":[22,"E"],"Abattage et façonnage des bois":[27,"E"],"Production acéricole":[20,"E"],"Grandes cultures":[21,"E"],"Réalisation d’aménagements paysagers":[21,"E"]};
+  function updW(){
+    var gw=num("gw"),gh=num("gh"),gr=num("gr"),t=num("c7");
+    var cards=document.querySelectorAll(".mc");
+    for(var i=0;i<cards.length;i++){
+      var wi=parseFloat(cards[i].querySelector(".wi").value),hi=parseFloat(cards[i].querySelector(".hi").value);
+      var nm=cards[i].querySelector("b").textContent,info=W[nm],useM=document.getElementById("gm").checked&&info,base=useM?info[0]:gw,lab=!isNaN(wi)?"ton taux":(useM?({G:"médiane officielle",R:"médiane région de Québec",C:"médiane annuelle convertie",N:"médiane canadienne"}[info[1]]||"estimation non vérifiée"):"taux global");
+      var w=isNaN(wi)?base:wi,h=isNaN(hi)?gh:hi,wk=w*h;
+      var s="<b>"+f2(w)+" $/h ("+lab+") × "+h+" h</b> = "+f(wk)+" $/semaine, "+f(wk*52/12)+" $/mois, "+f(wk*52)+" $/an (brut)";
+      if(t>0){s+=" ≈ "+f(wk*52/12*t)+" FCFA/mois";}
+      cards[i].querySelector(".wr").innerHTML=s;
+    }
+    var brut=gw*gh*52/12,net=brut*(1-gr/100),vie=num("c5");
+    var h2="<div>Revenu mensuel brut (taux global) : <b>"+f(brut)+" $ CAN</b></div><div>Revenu mensuel net estimé : <b>"+f(net)+" $ CAN</b></div><div>Coût de vie mensuel (calculateur de budget) : <b>"+f(vie)+" $ CAN</b></div>";
+    var d=net-vie;
+    h2+="<div style=\"margin-top:6px\">Solde mensuel : <b style=\"color:"+(d>=0?"#2e9b4f":"var(--red)")+"\">"+(d>=0?"+":"−")+f(Math.abs(d))+" $ CAN</b>"+(t>0?" (≈ "+f(Math.abs(d)*t)+" FCFA)":"")+"</div>";
+    h2+="<div style=\"margin-top:6px;font-size:.82rem;color:var(--muted)\">Estimation indicative : les retenues réelles dépendent de ta situation.</div>";
+    document.getElementById("inc").innerHTML=h2;
+  }
+  window.updW=updW;
+  document.addEventListener("input",function(e){var id=e.target.id||"";if(id.charAt(0)==="g"||id==="c5"||id==="c7"||e.target.className==="wi"||e.target.className==="hi"){updW();}});
+  updW();
+})();
+</script>
+<script>
+(function(){
+  var items=["Passeport valide","Diplôme(s) ou attestation de réussite","Relevés de notes de toutes les années","CV à jour","Lettre de motivation","Preuve de niveau de français (test ou attestation)","Traductions officielles, si demandées","Évaluation comparative des études, si demandée","Preuves de fonds (relevés bancaires, garant)","Photos d’identité conformes"];
+  var box=document.getElementById("cklist"),h="";
+  for(var i=0;i<items.length;i++){h+="<label class='ck'><input type='checkbox'><span>"+items[i]+"</span></label>";}
+  box.innerHTML=h;
+  function prog(){var c=box.querySelectorAll("input"),n=0;for(var i=0;i<c.length;i++){if(c[i].checked)n++;}document.getElementById("prog").textContent=n+" / "+c.length+" documents prêts";}
+  box.addEventListener("change",prog);prog();
+  var H={a:"Les centres demandent en général un niveau de secondaire. Une remise à niveau avant la demande peut être nécessaire.",b:"Ce niveau est souvent proche de ce que demandent plusieurs DEP (environ 10 années de scolarité selon le centre), parfois avec des prérequis en français ou en maths.",c:"Tu dépasses en général le niveau minimal pour un DEP. Les prérequis portent surtout sur le français et certaines matières.",d:"Ton diplôme sera comparé au système québécois. Demande au centre si une reconnaissance ou une formation complémentaire est possible.",e:"Ton niveau est largement suffisant pour un DEP. Tu peux aussi regarder les programmes techniques ou universitaires."};
+  document.getElementById("lv").addEventListener("change",function(){var v=this.value;document.getElementById("lvh").textContent=v?H[v]+" Le centre de formation décide après analyse de ton dossier.":"Choisis ton niveau pour voir une indication.";});
+  var R=[["Bas-Saint-Laurent","Rimouski"],["Saguenay–Lac-Saint-Jean","Saguenay"],["Capitale-Nationale","Québec"],["Mauricie","Trois-Rivières"],["Estrie","Sherbrooke"],["Montréal","Montréal"],["Outaouais","Gatineau"],["Abitibi-Témiscamingue","Rouyn-Noranda"],["Côte-Nord","Baie-Comeau"],["Nord-du-Québec","Chibougamau"],["Gaspésie–Îles-de-la-Madeleine","Gaspé"],["Chaudière-Appalaches","Lévis"],["Laval","Laval"],["Lanaudière","Joliette"],["Laurentides","Saint-Jérôme"],["Montérégie","Longueuil"],["Centre-du-Québec","Drummondville"]],g="";
+  for(var j=0;j<R.length;j++){g+="<div><b>"+R[j][0]+"</b><small>Ville : "+R[j][1]+"</small></div>";}
+  document.getElementById("reglist").innerHTML=g;
+})();
+</script>
+</body>
+</html>
