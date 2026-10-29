@@ -1,0 +1,25 @@
+{
+ "name": "Cap Québec – Étudier au Québec depuis l’Afrique",
+ "short_name": "Cap Québec",
+ "description": "Guide indépendant pour étudier au Québec depuis l’Afrique",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#f6f2f0",
+ "theme_color": "#e02417",
+ "lang": "fr",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any maskable"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}

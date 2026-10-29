@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#e02417">
+<link rel="apple-touch-icon" href="icon-192.png">
 <title>Cap Québec – Étudier au Québec depuis l’Afrique</title>
 <style>
 :root{--bg:#f6f2f0;--fg:#111;--card:#fff;--muted:#555;--red:#e02417;--line:#e3dcd8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -43,7 +46,7 @@ footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:.85rem}
 <body>
 <header>
   <div class="logo">Cap <span>Québec</span><small>Guide indépendant pour étudiants africains</small></div>
-  <nav><a href="#metiers">Métiers</a><a href="#immigration">Immigration</a><a href="#candidater">Candidater</a><a href="#regions">Régions</a><a href="#frais">Frais</a><a class="btn" href="#etapes" style="padding:10px 22px">Mon parcours</a></nav>
+  <nav><a href="#metiers">Métiers</a><a href="#immigration">Immigration</a><a href="#candidater">Candidater</a><a href="#regions">Régions</a><a href="#frais">Frais</a><a class="btn" href="#etapes" style="padding:10px 22px">Mon parcours</a><a class="btn" id="inst" href="#" style="display:none;padding:10px 22px;margin-left:8px">Installer l’app</a></nav>
 </header>
 
 <section class="hero" id="guide">
@@ -136,8 +139,11 @@ footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:.85rem}
   <div class="cta"><a class="btn" href="#etapes">Commencer mon plan</a></div>
 
   <p class="warn"><b>Avertissement :</b> Cap Québec est un site d’information indépendant. Il n’est affilié ni au gouvernement du Québec ni au gouvernement du Canada, et ne gère aucun concours ni aucune inscription.</p>
+<h2 style="margin-top:34px">GK Store : e-books pour étudiants</h2>
+  <p>Découvre les e-books de développement personnel de GK Store pour étudier avec plus de discipline et de confiance. C’est la boutique de l’auteur de ce site.</p>
+  <div class="cta"><a class="btn" href="https://jbvzrvrd.mychariow.shop" target="_blank" rel="noopener">Visiter GK Store</a></div>
 </main>
-<footer>© 2026 Cap Québec – Guide indépendant. Informations indicatives : vérifie toujours quebec.ca, canada.ca et guichetemplois.gc.ca.</footer>
+<footer><a href="https://jbvzrvrd.mychariow.shop" target="_blank" rel="noopener">GK Store</a> · © 2026 Cap Québec – Guide indépendant. Informations indicatives : vérifie toujours quebec.ca, canada.ca et guichetemplois.gc.ca.</footer>
 <script>
 (function(){
   function v(id){var n=parseFloat(document.getElementById(id).value);return isNaN(n)||n<0?0:n;}
@@ -238,6 +244,11 @@ footer{text-align:center;padding:24px 20px;color:var(--muted);font-size:.85rem}
   for(var j=0;j<R.length;j++){g+="<div><b>"+R[j][0]+"</b><small>Ville : "+R[j][1]+"</small></div>";}
   document.getElementById("reglist").innerHTML=g;
 })();
+</script>
+<script>
+if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){});});}
+var dp=null;window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();dp=e;document.getElementById("inst").style.display="inline-block";});
+document.getElementById("inst").addEventListener("click",function(e){e.preventDefault();if(dp){dp.prompt();dp=null;this.style.display="none";}});
 </script>
 </body>
 </html>
